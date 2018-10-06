@@ -336,7 +336,7 @@ public class FingerprintService extends SystemService implements IHwBinder.Death
      * @param userId
      */
     private void doFingerprintCleanupForUser(int userId) {
-        if (CLEANUP_UNUSED_FP) {
+        if (SystemProperties.getBoolean("ro.fingerprint.cleanup.unused", CLEANUP_UNUSED_FP)) {
             enumerateUser(userId);
         }
     }
