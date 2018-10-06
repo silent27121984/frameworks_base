@@ -62,6 +62,7 @@ import android.os.RemoteException;
 import android.os.SELinux;
 import android.os.ServiceManager;
 import android.os.SystemClock;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.security.KeyStore;
